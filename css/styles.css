@@ -1,0 +1,369 @@
+/*Created by Iris Yan*/
+
+#container {
+	width: 100%; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body {
+	background-color: #F1FAEE;
+	color: #1D3557;
+	font-family: 'Comfortaa', 'Courier New', monospace;
+	font-size: 16px;
+}
+
+nav ul {
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	border: 0.1875em solid #1D3557;
+	width: auto;
+}
+
+
+
+h1 {
+	margin: 0;
+	padding: 1em;
+	font-size: 3em;
+}
+
+nav li {
+	list-style-type: none;
+	margin: 0.5em 0;
+	padding: 0.5em;
+	background-color: #F1FAEE;
+	border-radius: 1em;
+	text-align: center;
+}
+
+nav li a {
+	color: #E63946;
+}
+
+header {
+	text-align: center;
+	font-size: 1.25em;
+}
+
+.tablet {
+	display: none;
+}
+
+.desktop {
+	display: none;
+}
+
+article {
+	word-wrap: break-word;
+	border: 0.1875em solid #1D3557;
+	margin-bottom: 0.5em;
+	padding: 0.5em;
+}
+
+a {
+	color: #E63946;
+}
+
+p {
+	padding: 0.5em;
+}
+
+h3 {
+	text-align: center;
+	font-size: 2.5em;
+} 
+
+footer {
+	color: #1D3557;
+	font-size: 1em;
+	text-align: center;
+	clear: both;
+	border: 0.1875em solid #1D3557;
+	margin-top: 0.5em;
+	padding: 0.5em;
+}
+
+main {
+	clear: both;
+}
+
+html {
+	width: 100%;
+}
+
+img {
+	width: 100%;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	border: 0.1875em solid  #1D3557;
+	padding: 0.3em;
+}
+
+th {
+	background: #A8DADC;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+tr:nth-child(odd) {
+	background: #A8DADC;
+} 
+
+tr:nth-child(even) {
+	background: #CDEAE5;
+}
+
+td {
+	text-align: center;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+}
+
+@media only screen and (min-width: 534px) {
+	
+	nav ul {
+		padding-bottom: 0.625em;
+		padding-top: 0.625em;
+		margin: 0;
+		border-top: 0.1875em solid #1D3557;
+		border-bottom: 0.1875em solid #1D3557;
+		border-right: 0;
+		border-left: 0;
+	}
+	
+	nav li {
+		display: inline-block;
+		margin-left: 3%;
+		margin-right: 3%;
+		padding: 0;
+		width: 13%;
+		border-radius: 0;
+		background: transparent;
+		text-align: center;
+	}
+	
+	nav li a {
+		color: #E63946;
+		text-decoration: solid;
+	}
+	
+	body {
+		background: #CDEAE5;
+	}
+	
+	.tablet {
+		display: block;
+	}
+
+	.desktop {
+		display: none;
+	}
+	
+	main article img {
+		width: 100%;
+	}
+	
+	article {
+		margin: 0.5em;
+		word-wrap: break-word;
+		border-top: 0;
+		border-bottom: 0.1875em solid #1D3557;
+		border-right: 0;
+		border-left: 0;
+	}
+	
+	footer {
+		border-top: 0;
+		border-bottom: 0.1875em solid #1D3557;
+		border-right: 0;
+		border-left: 0;
+	}
+	
+	th {
+		background: #F1FAEE;
+	}
+	
+	tr:nth-child(odd) {
+		background: #F1FAEE;
+	}
+	
+	tr:nth-child(even) {
+		background: #A8DADC;
+	}
+	
+	table {
+		width: 90%;
+		margin: 5%;
+		border-right: 0;
+		border-left: 0;
+	}
+
+}
+
+@media only screen and (min-width: 808px) {
+	
+	.tablet {
+		display: block;
+	}
+
+	.desktop {
+		display: block;
+	}
+	
+	html {
+		margin: 0;
+		padding: 0;
+	}
+	
+	body {
+		margin: 0;
+		padding: 0;
+		background: #A8DADC;
+	}
+	
+	article {
+		margin: 0;
+		padding: 1.7em 0;
+		border: 0px solid transparent;
+	}
+
+	nav {
+		background:  #CDEAE5;
+	}
+	
+	nav ul {
+		border: 0 solid transparent;
+		width: 100%;
+		clear: both;
+		margin-bottom: 0;
+		margin-left: 0;
+	}
+	
+	img {
+		padding: 0.5em;
+	}
+	
+	article:nth-child(even) {
+		background: #CDEAE5;
+	}
+	
+	article:nth-child(even) img {
+		float: left;
+	}
+	
+	article:nth-child(even) audio {
+		float: right; 
+	}
+	
+	article:nth-child(even) audio::-webkit-media-controls-panel {
+		background-color: #F1FAEE;
+	}
+	
+	article:nth-child(odd) {
+		background: #F1FAEE;
+	}
+	
+	article:nth-child(odd) img {
+		float: right;
+	} 
+	
+	article:nth-child(odd) audio {
+		float: left;
+	}
+	
+	article:nth-child(odd) audio::-webkit-media-controls-panel {
+		background-color: #CDEAE5;
+	}
+	
+	audio {
+		padding-left: 11.5%;
+		padding-right: 11.5%;
+		width: 25%;
+	}
+	
+	audio::-webkit-media-controls-current-time-display {
+		color: #E63946;
+	}
+	
+	audio::-webkit-media-controls-time-remaining-display{
+		color: #1D3557;
+	}
+	
+	footer {
+		border-bottom: 0;
+		margin: 0;
+		padding: 2em;
+	}
+	
+	h3 {
+		padding: 1em;
+		margin: 0px;
+		font-size: 1.75em;
+	}
+	
+	main article img {
+		width: 50%;
+		padding: 0 0.5em;
+	}
+	
+	main article p {
+		padding: 1.5em;
+		margin: 0;
+		text-align: center;
+	}
+	
+	article {
+		float: left;
+		width: 100%;
+	}
+
+	footer p {
+		margin: 0;
+	}
+
+	article ul {
+		margin: 0;
+		padding-left: 7.5em;
+		padding-right: 7.5em;
+	}	
+	
+	table {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		border: 0.1em solid #A8DADC;
+	}
+	
+	th {
+		background: #A8DADC;
+	}
+	
+	tr:nth-child(odd) {
+		background: #CDEAE5;
+	}
+	
+	tr:nth-child(even) {
+		background: #F1FAEE;
+	}
+	
+	#bottom-left {
+		float: left;
+		width: 48.5%;
+	}
+	
+	#bottom-right {
+		float: right;
+		width: 46.5%;
+	}
+	
+}
+
+/*I got the audio code from this website: https://blog.shahednasser.com/how-to-style-an-audio-element/
+secruly I hate you so much stop blocking actually useful things*/
